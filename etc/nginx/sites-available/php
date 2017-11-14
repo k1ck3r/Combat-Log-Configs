@@ -1,0 +1,19 @@
+server {
+    listen 8181;
+    listen [::]:8181;
+
+    server_name 87.121.91.71;
+
+    root   /var/www/html;
+    index  index.html index.php;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+    location ~ \.php$ {
+            include snippets/fastcgi-php.conf;
+            include fastcgi_params;
+            fastcgi_pass unix:/run/php/php7.1-fpm.sock;
+            fastcgi_param SCRIPT_FILENAME /var/www/html$fastcgi_script_name;
+    }
+}

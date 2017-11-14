@@ -1,0 +1,61 @@
+server {
+  listen 80;
+  server_name app.combatlog.eu;
+
+  location /.well-known/acme-challenge {
+    alias /var/www/wellknown;
+  }
+
+  location / {
+    return 301 https://$host$request_uri;
+  }
+}
+
+server {
+  listen 443;
+  root  /opt/multistreamer/static;
+  ssl_certificate     /etc/dehydrated/certs/app.combatlog.eu/fullchain.pem;
+  ssl_certificate_key /etc/dehydrated/certs/app.combatlog.eu/privkey.pem;
+
+  server_name app.combatlog.eu;
+
+  location /users {
+    proxy_pass http://127.0.0.1:8080;
+    proxy_request_buffering off;
+    proxy_http_version 1.1;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_redirect http:// $scheme://;
+  }
+
+  location /ws {
+    proxy_pass http://127.0.0.1:8081;
+    proxy_request_buffering off;
+    proxy_http_version 1.1;
+    proxy_set_header Host $host;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_redirect http:// $scheme://;
+  }
+
+  location / {
+    proxy_pass http://127.0.0.1:8081;
+    proxy_request_buffering off;
+    proxy_http_version 1.1;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_redirect http:// $scheme://;
+ }
+
+  location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    include fastcgi_params;
+    fastcgi_pass unix:/run/php/php7.1-fpm.sock;
+    fastcgi_param SCRIPT_FILENAME /opt/multistreamer/static$fastcgi_script_name;
+ }
+
+}

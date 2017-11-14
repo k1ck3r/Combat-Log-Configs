@@ -1,0 +1,13 @@
+<?php
+$outputDir='/tmp/sim';
+if(!file_exists($outputDir))
+    @mkdir($outputDir,0775);
+if(file_exists($outputDir) && is_dir($outputDir) && is_writable($outputDir))
+    $outputDir.='/';
+else
+    $outputDir.='_';
+$outputFname=date('Y-m-d_H-i-s').'.txt';
+if(isset($_POST['reqData']) && !empty($_POST['reqData'])) {
+    $data=$_POST['reqData'];
+    file_put_contents($outputDir.$outputFname,$data);
+}

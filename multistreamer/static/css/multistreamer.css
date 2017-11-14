@@ -1,0 +1,381 @@
+span.error {
+    color: red;
+}
+
+#stream-key {
+  display:none;
+}
+
+a {
+    color: #428bca;
+}
+
+.header {
+  background-color: #6495ED;
+  color: #ffffff;
+
+}
+
+.header h1 a {
+    color: #ffffff;
+    text-decoration:none;
+}
+
+.header a {
+    color: #ffffff;
+}
+
+.wrapper, #chatwrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#chatwrapper {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+#viewwrapper {
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=password], select, textarea {
+    width: 40em;
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+}
+
+textarea {
+    height: 15em;
+}
+
+.closebtn {
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: #000000;
+}
+
+div.msg {
+    width: 50%;
+    font-weight: bold;
+    color: #ffffff;
+    padding: .5em;
+}
+
+div.msg.msg-success {
+    background-color: #0fc436;
+}
+div.msg.msg-error {
+    background-color: #c40f18;
+}
+ 
+li {
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+legend {
+    font-weight: bold;
+}
+
+li.live {
+    list-style-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIHN0cm9rZT0iYmxhY2siIGZpbGw9ImdyZWVuIiBjeD0iMTAwIiBjeT0iMTAwIiByPSIxMDAiLz48L3N2Zz4K');
+}
+
+li.offline {
+    list-style-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIHN0cm9rZT0iYmxhY2siIGZpbGw9InJlZCIgY3g9IjEwMCIgY3k9IjEwMCIgcj0iMTAwIi8+PC9zdmc+Cg==');
+}
+
+li li {
+    list-style-image: none;
+}
+
+div#chatviewers {
+    padding-left: 1em;
+    padding-right: 1em;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap:         wrap;
+    -webkit-justify-content: space-between;
+    justify-content:         space-between;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+
+div#chatmessages {
+    overflow: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+div.chatmessage, div#chatinput {
+    margin-top: .5em;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction:         row;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap:         nowrap;
+    background-color: #f2f2f2;
+    border-style: solid;
+    border-width: 1px;
+    flex-shrink: 0;
+    opacity: 1;
+}
+
+div#chatinput {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+div.chatmessage {
+    -webkit-align-items: last baseline;
+    -webkit-box-align: last baseline;
+    align-items: last baseline;
+}
+
+div.chatmessage.compact {
+    -webkit-flex-direction: column;
+    flex-direction:         column;
+    -webkit-align-items: left;
+    -webkit-box-align: left;
+    align-items: left;
+}
+
+div.chatmessage.compact div.name {
+    margin-bottom: .5em;
+
+}
+
+div.chatmessage.compact div.name p, div.chatmessage.compact div.emote p, div#chatinput div.name p, div.chatpicker p {
+    margin-left: .5em;
+}
+
+div.chatmessage.compact div.icon svg.chaticon {
+    height: 1em;
+    min-height: 1em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    padding-left: .25em;
+    padding-right: .25em;
+    display: block;
+}
+
+div.chatmessage.compact div.icon svg.minicon {
+    display: none;
+}
+
+div.chatmessage.compact div.icon img.chaticon {
+    width: 1.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+}
+
+div.chatmessage.compact div.name p, div.chatmessage.compact div.emote p {
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-align-self: center;
+    align-self: center;
+}
+
+div.chatmessage.compact div.text p {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+div.chatmessage.private {
+    background-color: #ff7aab;
+}
+
+div #chatpickerlist {
+    margin-top: .5em;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    flex-direction:         column;
+    -webkit-flex-wrap: nowrap;
+    border-style: none;
+    margin-bottom: 2em;
+    width: 100%;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+
+div #chatinput {
+    margin-bottom: 2em;
+    height: 3em;
+    min-height: 3em;
+}
+
+
+div.chatmessage div.name, div#chatinput div.name, div.chatpicker {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    flex-shrink:         0;
+}
+
+div.chatmessage div.emote {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+div.chatmessage div.name div.icon, div.chatmessage div.emote div.icon {
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    position: relative;
+}
+
+div.chatpicker {
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f2f2f2;
+    margin-right: 0;
+    width: 100%;
+    min-height: 3em;
+    box-sizing: border-box;
+}
+
+
+div.chatmessage div.name p, div.chatmessage div.emote p, div#chatinput div.name p, div.chatpicker p {
+    font-weight: bold;
+    margin-left: 1em;
+    margin-right: 0;
+    -webkit-align-self: baseline;
+    align-self: baseline;
+}
+
+div.chatmessage div.name p, div.chatmessage div.emote p, div.chatmessage div.text p, div.chatpicker p {
+    margin-bottom: .5em;
+}
+
+div.chatmessage div.text, div#chatinput div.message {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+div.chatmessage div.text p, div#chatinput div.message input {
+    margin-right: 1em;
+    margin-left: .5em;
+    -webkit-align-self: baseline;
+    align-self: baseline;
+}
+div#chatinput div.message {
+    width: 100%;
+}
+
+div#chatinput div.message input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.chatmessage div.text p img {
+    height: 2em;
+    margin-bottom: -0.5em;
+}
+
+svg.chaticon {
+    height: 2em;
+    min-height: 2em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+    display: block;
+}
+
+svg.minicon {
+    height: 1em;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    padding-left: .1em;
+    padding-right: .1em;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+}
+
+img.chaticon {
+    width: 3em;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+}
+
+.chaticon path, .minicon path {
+    fill: #fff;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+.twitch {
+    background-color: #6441a5;
+}
+.youtube {
+    background-color: #cd201f;
+}
+.irc {
+    background-color: #6b6f75;
+}
+.mixer {
+    background-color: #0e162a;
+}
+
+.mixer path.st0{fill:#03214F;}
+.mixer path.st1{fill:#1FBAED;}
+
+video {
+    width: 100%;
+}
