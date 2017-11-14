@@ -1,0 +1,135 @@
+rogue="Phrenetíc"
+level=110
+race=orc
+region=eu
+server=stormscale
+role=attack
+professions=alchemy=800/engineering=800
+talents=1113213
+spec=subtlety
+artifact=17:0:0:0:0:851:1:852:4:853:4:854:4:855:4:856:4:857:4:858:4:859:4:860:4:861:1:862:1:863:1:864:1:865:1:866:1:1349:1:1386:1:1585:4:1586:1:1587:1:1588:23:1653:1
+crucible=1739:1780:858/1739:1774:854/1739:1771
+
+head=,id=147172,gem_id=151585,bonus_id=3563/1808/42/1517/3336
+neck=,id=137487,enchant_id=5890,bonus_id=3418/1572/3336
+shoulder=,id=144236,enchant_id=5929,bonus_id=3459/3570
+back=,id=147170,enchant_id=5435,bonus_id=3563/1512/3528
+chest=,id=147169,bonus_id=3562/1497/3528
+shirt=,id=42378
+tabard=,id=31404
+wrist=,id=147041,gem_id=151584,bonus_id=3563/1808/1512/3528
+hands=,id=151818,bonus_id=1811/3570
+waist=,id=147039,bonus_id=3563/1517/3336
+legs=,id=147173,bonus_id=3562/1497/3528
+feet=,id=134429,gem_id=151584,bonus_id=3418/1808/1592/3337
+finger1=,id=137533,enchant_id=5429,bonus_id=3536/1582/3337
+finger2=,id=144481,enchant_id=5430,gem_id=151585,bonus_id=3536/1808/1582/3337
+trinket1=,id=151190,bonus_id=3562/1507/3528
+trinket2=,id=142167,bonus_id=3536/1542/3337
+main_hand=,id=128476,gem_id=147084/147108/137351,bonus_id=743,relic_id=3563:1512:3528/3562:1527:3337/3418:1587:3337
+off_hand=,id=128479
+
+### Gear from Bags
+#
+# The Empty Crown (970)
+# head=,id=151815,bonus_id=3459/3570
+#
+# Prydaz, Xavaric's Magnum Opus (970)
+# neck=,id=132444,enchant_id=5890,gem_id=130222,bonus_id=1811/3570
+#
+# String of Extracted Incisors (935)
+# neck=,id=147013,bonus_id=3563/1517/3336
+#
+# Stormcharged Choker (930)
+# neck=,id=134497,enchant_id=5890,bonus_id=3536/1582/3337
+#
+# Stabilized Energy Pendant (930)
+# neck=,id=134488,enchant_id=5890,bonus_id=3536/1582/3337
+#
+# Blessed Medallion of Karabor (141)
+# neck=,id=32757
+#
+# Fanged Slayer's Shoulderpads (930)
+# shoulder=,id=147174,bonus_id=3562/40/1512/3337
+#
+# Mainsail Cloak (930)
+# back=,id=134406,enchant_id=5435,gem_id=130222,bonus_id=3536/1808/1582/3337
+#
+# The Dreadlord's Deceit (970)
+# back=,id=137021,enchant_id=5435,bonus_id=3459/3570
+#
+# Cloak of Coordination (60)
+# back=,id=65274
+#
+# Drape of Shame (955)
+# back=,id=142170,enchant_id=5435,bonus_id=3418/1572/3337
+#
+# Doomblade Tunic (910)
+# chest=,id=138326,bonus_id=3518/1507/3336
+#
+# Zoldyck Family Training Shackles (970)
+# wrist=,id=137098,bonus_id=1811/3570
+#
+# Greenskin's Waterlogged Wristcuffs (970)
+# wrist=,id=137099,bonus_id=1811/3570
+#
+# Denial of the Half-Giants (970)
+# wrist=,id=137100,bonus_id=3459/3570
+#
+# Fanged Slayer's Handguards (930)
+# hands=,id=147171,bonus_id=3563/1512/3528
+#
+# Cinidaria, the Symbiote (970)
+# waist=,id=133976,bonus_id=3459/3570
+#
+# Will of Valeera (970)
+# legs=,id=137069,bonus_id=3529/3459/3570
+#
+# Doomblade Pants (905)
+# legs=,id=138335,bonus_id=3516/1502/3337
+#
+# Duskwalker's Footpads (970)
+# feet=,id=137030,bonus_id=3529/3459/3570
+#
+# Band of the Kirin Tor (200)
+# finger1=,id=40586
+#
+# Soul of the Shadowblade (970)
+# finger1=,id=150936,enchant_id=5429,gem_id=130247,bonus_id=3459/3570
+#
+# Insignia of Ravenholdt (970)
+# finger1=,id=137049,enchant_id=5429,gem_id=151580,bonus_id=3529/3459/3570
+#
+# Ring of Collapsing Futures (940)
+# finger1=,id=142173,enchant_id=5430,gem_id=151585,bonus_id=3418/1808/1552/3337
+#
+# Violet Seal of the Grand Magus (875)
+# finger1=,id=142469,enchant_id=5429
+#
+# Convergence of Fates (895)
+# trinket1=,id=140806,bonus_id=3516/1492/3336
+#
+# Astral Alchemist Stone (935)
+# trinket1=,id=151607,bonus_id=3609/600/3608
+#
+# Kil'jaeden's Burning Wish (970)
+# trinket1=,id=144259,bonus_id=3459/3570
+#
+# Umbral Moonglaives (920)
+# trinket1=,id=147012,bonus_id=3562/1502/3336
+#
+# Engine of Eradication (930)
+# trinket1=,id=147015,bonus_id=3562/1512/3337
+#
+# Golad, Twilight of Aspects (416)
+# main_hand=,id=77949
+#
+# Blacksmith Hammer (1)
+# main_hand=,id=5956
+#
+# Arclight Spanner (10)
+# main_hand=,id=6219
+#
+# Tiriosh, Nightmare of Ages (416)
+# off_hand=,id=77950
+#
